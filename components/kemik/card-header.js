@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
-import Menu from "./menu";
-import PortalDrawer from "./portal-drawer";
+import Menu from "../menu";
+import PortalDrawer from "../portal-drawer";
 import styles from "./card-header.module.css";
 
 const CardHeader = () => {
