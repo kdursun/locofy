@@ -1,0 +1,83 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.buttoniconChild {
+  position: relative;
+  width: 4.69rem;
+  height: 2.75rem;
+  object-fit: cover;
+}
+.butonDeneme {
+  position: relative;
+  letter-spacing: 0.05em;
+}
+.buttonicon,
+.one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.buttonicon {
+  position: absolute;
+  top: 38.44rem;
+  left: 17.88rem;
+  border-radius: var(--br-12xl);
+  background-color: var(--color-lightpink-100);
+  width: 41.56rem;
+  height: 5.06rem;
+  padding: var(--padding-3xs) var(--padding-xl);
+  gap: var(--gap-3xl);
+}
+.one {
+  width: 15.94rem;
+  padding: var(--padding-3xs);
+}
+.menu,
+.wrapper {
+  width: 16.56rem;
+  display: flex;
+}
+.wrapper {
+  height: 11rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-whitesmoke);
+  height: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  opacity: 0;
+  max-width: 90%;
+  overflow: auto;
+  font-size: var(--font-size-5xl);
+}
+.menu.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}
+.header {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 66.13rem;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-arial);
+}

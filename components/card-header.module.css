@@ -1,0 +1,145 @@
+.logo,
+.logo1 {
+  width: 6.25rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.logo1 {
+  position: relative;
+  letter-spacing: 0.05em;
+  justify-content: center;
+  height: 1.75rem;
+}
+.logo {
+  height: 2.94rem;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hamburger1Icon {
+  position: relative;
+  width: 4.63rem;
+  height: 3.63rem;
+  object-fit: cover;
+}
+.hamburger1 {
+  width: 4.19rem;
+  height: 3.63rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.hamburger,
+.one,
+.three,
+.two {
+  align-items: center;
+  height: 3.63rem;
+}
+.hamburger {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-11xs);
+  background-color: transparent;
+  width: 3.63rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.one,
+.three,
+.two {
+  position: absolute;
+  top: 0;
+  left: 0.31rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  width: 5rem;
+}
+.three,
+.two {
+  left: 5.16rem;
+}
+.three {
+  left: 10rem;
+}
+.navigationlinks {
+  position: relative;
+  border-radius: var(--br-31xl);
+  width: 15.31rem;
+  height: 3.63rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.bell,
+.bell1Icon {
+  width: 3.63rem;
+  height: 3.63rem;
+}
+.bell1Icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.bell {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.profile1Icon {
+  position: absolute;
+  top: -0.84rem;
+  left: -0.37rem;
+  width: 4.38rem;
+  height: 5.31rem;
+  object-fit: cover;
+}
+.navbarheader,
+.right {
+  height: 6.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.right {
+  width: 24.31rem;
+  min-width: 12.5rem;
+  text-align: left;
+}
+.navbarheader {
+  position: absolute;
+  width: calc(100% - 271px);
+  top: 0;
+  right: 0.38rem;
+  left: 16.56rem;
+  background-color: var(--color-mistyrose);
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-arial);
+}
+@media screen and (max-width: 960px) {
+  .hamburger {
+    display: none;
+  }
+  .navigationlinks {
+    display: flex;
+  }
+}
+@media screen and (max-width: 420px) {
+  .hamburger {
+    display: flex;
+  }
+  .navigationlinks {
+    display: none;
+  }
+}
